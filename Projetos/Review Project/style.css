@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 20
+}
+
+
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    position: relative;
+    font-size: larger;
+    
+}
+
+h2{
+    font-weight: 600;
+    
+}
+
+.underline{
+    background-color: rgb(2, 175, 243);
+    width: 70px;
+    height: 4px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -15px;
+   
+
+    
+    
+}
+.review{
+    background-color: white;
+    border-radius: 13px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.116);
+
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    text-align: center;
+    padding-top: 80px;
+    
+    width: 500px;
+    height: 480px;
+
+    
+}
+.img-container{
+    margin-top: -80px;
+}
+
+
+h4#author{
+    padding-top: 5px;
+    
+}
+p#job{
+    color:rgb(4, 161, 223);
+    padding: 5px;
+    
+}
+p#info{
+    text-align: center;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button{
+    background-color: transparent;
+    margin: auto;
+    border-color: transparent;
+    color:rgb(4, 161, 223);
+}
+
+button:hover{
+    color:rgb(0, 110, 153);
+    
+}
+
