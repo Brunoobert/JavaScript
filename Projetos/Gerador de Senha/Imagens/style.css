@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+:root {
+    --color-primary-1: #8BC34A;
+    --color-primary-2: #8BC34AA6;
+
+    --color-neutral-1: #f8fafc;
+    --color-neutral-2: #24232b;
+    --color-neutral-3: #12121a;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--color-neutral-3);
+}
+
+#container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 400px;
+    
+}
+
+#cadeado{
+    height: 200px;
+}
+
+#title{
+    color: var(--color-neutral-1);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+.password_container{
+    background-color: var(--color-neutral-2);
+    width: 100%;
+    
+    display: none;
+    justify-content: space-between;
+   
+    color: var(--color-neutral-1);
+    padding: 8px 18px;
+    border-radius: 8px;
+}
+
+.password_container.show{
+    display: flex;
+}
+
+#password{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#copy_btn{
+    background-color: transparent;
+    border: none;
+}
+#copy{
+    background-color: transparent;
+    color: var(--color-primary-1);
+    font-size: 20px;
+    width: 30px;
+    cursor: pointer;
+    transition: color .4s;
+}
+
+#copy:hover{
+    color: var(--color-primary-2);
+}
+
+.input_password_itens{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-neutral-1);
+    
+    gap: 8px;
+    background-color: var(--color-neutral-2);
+    border-radius: 8px;
+    padding: 18px;
+    
+}
+
+#quant_caracter{
+    width: 60px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+}
+
+#quant_caracter::-webkit-inner-spin-button,
+#quant_caracter::-webkit-outer-spin-button{
+    opacity: 1;
+}
+
+#quant_caracter:focus{
+    outline: 1px solid var(--color-primary-1);
+}
+
+#incluir_caracterE{
+    padding-bottom: 400px;
+}
+
+#generate{
+    background-color: var(--color-primary-1);
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-top: 12px;
+    border-radius: 8px;
+    align-items: center;
+    transition:background-color .4s;
+    cursor: pointer;
+}
+
+#generate:hover{
+    background-color: var(--color-primary-2 );
+}
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    color: var(--color-neutral-1);
+    top: 90%;
+    position: absolute;
+    
+    align-items: center;
+    margin: auto;
+}
+
+
+

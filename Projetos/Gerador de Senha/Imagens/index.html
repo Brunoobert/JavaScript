@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <main>
+        <div id="container">
+            <div class="password_img">
+                <img id="cadeado"src="illustration.svg" alt="">
+                <h1 id="title">Gerar senha</h1>
+            </div>
+            
+            <div class="password_container">
+                <span id="password"></span>
+                <button id="copy_btn">
+                    <span class="material-symbols-outlined" id="copy">
+                        content_copy
+                    </span>
+                </button>
+                
+            </div>
+            
+            <div class="input_password_itens">
+                <div class="item">
+                    <input type="number" name="quant_caracter" id="quant_caracter" min="0" >
+                    <label for="quant_caracter">Quantidade de caracteres</label>
+                </div>
+
+                <div class="item">
+                    <input type="checkbox" name="incluir_maiuscula" id="incluir_maiuscula"><label for="incluir_maiuscula">
+                        Incluir letra maiúscula
+                    </label>
+                </div>
+
+                <div class="item">
+                    <input type="checkbox" name="incluir_minuscula" id="incluir_minuscula"><label for="incluir_minuscula">
+                        Incluir letra minúscula
+                    </label>
+                </div>
+
+                <div class="item">
+                    <input type="checkbox" name="incluir_numero" id="incluir_numero"><label for="incluir_numero">
+                        Incluir numero
+                    </label>
+                </div>
+
+                <div class="item">
+                    <input type="checkbox" name="incluir_caracterE" id="incluir_caracterE">
+                    <label for="incluir_caracterE">
+                        Incluir caractere especial
+                    </label>
+                </div>
+                <div class="button">
+                    <button id="generate">Clique para gerar</button>
+                </div>
+            </div>
+
+            <p id="footer">Feito por:Bruno Bertoldo</p>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

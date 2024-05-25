@@ -70,3 +70,5 @@ function attCard(card){
     profissao.textContent = item.prof;
     texto.textContent = item.text;
 }
+
+
